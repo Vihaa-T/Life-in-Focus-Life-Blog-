@@ -263,36 +263,36 @@ body {
     }
 
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 10px 15px;
     }
 
     .navbar ul {
-        display: none; /* Hide the menu items by default */
-        flex-direction: column;
+        flex-direction: column; /* Stack links vertically for smaller screens */
+        display: none; /* Hide the menu links by default */
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
 
     .navbar ul li {
         margin: 10px 0;
-        width: 100%;
     }
 
     .navbar ul li a {
         font-size: 16px;
         padding: 10px;
-        display: block;
         width: 100%;
-        text-align: left;
+        display: block;
     }
 
     .navbar.active ul {
-        display: flex; /* Show menu items when 'active' class is added */
+        display: flex; /* Show menu links when active */
     }
 
     .navbar .menu-icon {
-        display: block; /* Show the menu icon on smaller screens */
+        display: block; /* Show the hamburger icon on smaller screens */
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
     }
 }
 
