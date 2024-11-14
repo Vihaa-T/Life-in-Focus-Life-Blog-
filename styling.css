@@ -267,7 +267,7 @@ body {
     }
 
     .navbar ul {
-        flex-direction: column; /* Stack links vertically for smaller screens */
+        flex-direction: row; /* Stack links vertically for smaller screens */
         display: none; /* Hide the menu links by default */
         width: 100%;
         text-align: center;
