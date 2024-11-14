@@ -261,6 +261,39 @@ body {
         text-align: center; /* Center-align the button text */
         margin-top: 15px; /* Add margin to separate from other content */
     }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        display: none; /* Hide the menu items by default */
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar.active ul {
+        display: flex; /* Show menu items when 'active' class is added */
+    }
+
+    .navbar .menu-icon {
+        display: block; /* Show the menu icon on smaller screens */
+    }
 }
 
 
