@@ -223,20 +223,43 @@ body {
 /* Make the page responsive */
 @media (max-width: 600px) {
     .about-container {
-        padding: 15px;
+        padding: 10px; /* Reduced padding for smaller screens */
+        width: 100%; /* Ensure the container takes up the full width */
     }
 
     .about-container h1 {
-        font-size: 28px;
+        font-size: 24px; /* Smaller font size for headings */
+        text-align: center; /* Center align the main title */
     }
 
     .about-container h2 {
-        font-size: 22px;
+        font-size: 20px; /* Adjust the subheading font size */
+        text-align: center; /* Center align the subheading */
     }
 
     .about-container p,
     .about-container ul li {
-        font-size: 16px;
+        font-size: 14px; /* Smaller font size for paragraphs and list items */
+        line-height: 1.5; /* Increase line height for better readability */
+    }
+
+    .about-container ul {
+        padding-left: 20px; /* Add some padding for unordered list */
+    }
+
+    .about-container img {
+        width: 100%; /* Make sure images take the full width of the container */
+        height: auto; /* Keep the aspect ratio */
+        display: block; /* Avoid any space below the image */
+        margin: 10px 0; /* Add some margin around the image */
+    }
+
+    .about-container .button {
+        width: 100%; /* Make buttons take full width on mobile */
+        font-size: 16px; /* Adjust font size */
+        padding: 10px 20px; /* Make the button larger for better touch interactions */
+        text-align: center; /* Center-align the button text */
+        margin-top: 15px; /* Add margin to separate from other content */
     }
 }
 
