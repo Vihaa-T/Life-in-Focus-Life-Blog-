@@ -221,7 +221,7 @@ body {
 }
 
 /* Make the page responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .about-container {
         padding: 10px; /* Reduced padding for smaller screens */
         width: 100%; /* Ensure the container takes up the full width */
@@ -263,36 +263,42 @@ body {
     }
 
     .navbar {
-        padding: 10px 15px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: block; /* Show the hamburger icon */
+        font-size: 30px;
+        cursor: pointer;
     }
 
     .navbar ul {
-        flex-direction: row; /* Stack links vertically for smaller screens */
-        display: none; /* Hide the menu links by default */
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
         width: 100%;
-        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        z-index: 100;
+    }
+
+    .navbar.active ul {
+        display: flex; /* Show the menu when active */
     }
 
     .navbar ul li {
         margin: 10px 0;
+        text-align: center;
     }
 
     .navbar ul li a {
-        font-size: 16px;
-        padding: 10px;
-        width: 100%;
         display: block;
-    }
-
-    .navbar.active ul {
-        display: flex; /* Show menu links when active */
-    }
-
-    .navbar .menu-icon {
-        display: block; /* Show the hamburger icon on smaller screens */
-        font-size: 30px;
+        padding: 10px;
+        font-size: 16px;
         color: white;
-        cursor: pointer;
+        text-decoration: none;
     }
 }
 
