@@ -5,6 +5,10 @@ function handleSubmit(event) {
     alert('Thank you for reaching out! We will contact you shortly.');
 }
 function toggleMenu() {
-    const navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('active');
+    const navLinks = document.getElementById('navLinks');
+    if (navLinks.style.display === 'block') {
+        navLinks.style.display = 'none';
+    } else {
+        navLinks.style.display = 'block';
+    }
 }
