@@ -262,46 +262,47 @@ body {
         margin-top: 15px; /* Add margin to separate from other content */
     }
 
-    .navbar {
-        flex-direction: column;
-        padding: 10px;
-    }
-
     .menu-icon {
-        display: block; /* Show the hamburger icon */
+        display: block; /* Display the menu icon in mobile view */
         font-size: 30px;
+        color: white;
         cursor: pointer;
     }
 
-    .navbar ul {
-        display: none; /* Hide the menu by default */
+    .navbar th {
+        display: none; /* Hide the menu links by default */
         flex-direction: column;
         width: 100%;
-        background-color: #333;
         position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
+        top: 50px; /* Adjust to avoid covering content */
         left: 0;
+        background-color: #333;
         z-index: 100;
-    }
-
-    .navbar.active ul {
-        display: flex; /* Show the menu when active */
-    }
-
-    .navbar ul li {
-        margin: 10px 0;
         text-align: center;
     }
 
-    .navbar ul li a {
-        display: block;
-        padding: 10px;
+    .navbar.active th {
+        display: flex; /* Show menu links when active */
+    }
+
+    .navbar th tr {
+        margin: 10px 0;
+    }
+
+    .navbar th tr  a {
         font-size: 16px;
-        color: white;
+        padding: 10px;
+        width: 100%;
+        display: block;
+        color: white; /* Adjust color if needed */
         text-decoration: none;
     }
 }
+    
 
+    
+        
+    
 
 header {
     text-align: center;
